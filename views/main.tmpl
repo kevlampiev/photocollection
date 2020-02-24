@@ -1,0 +1,25 @@
+{% include 'header.tmpl' %}
+
+<div id="main-container-image">
+				<section class="work">
+                     {% for item in imgList %}
+
+					<figure class="white">
+						<a href="details.php?id={{item.id}}">
+							<img src="{{item.imgPath}}" alt="" />
+							<dl>
+								<dt>{{item.title}}</dt>
+								<dd>{{item.description}}</dd>
+							</dl>
+						</a>
+						<div id="wrapper-part-info">
+							<div class="part-info-image"><i class="fas fa-camera" style="color: #CCC;"></i></div>
+							<div id="part-info">Wordpress theme</div>
+						</div>
+					</figure>
+                    {% endfor %}
+				</section>
+	<!--</div> -->
+</div> 
+
+{% include 'footer.tmpl' %}
