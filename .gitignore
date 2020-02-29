@@ -105,3 +105,4 @@ dist
 
 #Twig an so on
 vendor/
+composer.phar
